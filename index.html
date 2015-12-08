@@ -12,8 +12,8 @@
 	<header>
 		<h1> Sistema de PW10</h1>
 		<ul>
-			<li><button type="button" class="btn btn-primary" id="altas">Altas</button></li>
-			<li><button type="button" class="btn btn-success">Bajas</button></li>
+			<li><button type="button" class="btn btn-primary" id="btnAltas">Altas</button></li>
+			<li><button type="button" class="btn btn-success" id="btnBajas">Bajas</button></li>
 			<li><button type="button" class="btn btn-info">Cambios</button></li>
 			<li><button type="button" class="btn btn-warning">Consultas</button></li>
 			<li><button type="button" class="btn btn-danger">Salir</button></li>
@@ -21,7 +21,7 @@
 	</header>
 	<section id="secAltaAlumnos">
 		<h2>Altas de Alumnos</h2>
-		<form action="">
+		<form action="javascript:GuardaAltaAlumno();" id="frmAltaAlumnos">
 			<input type="text" id="txtNumControl" 	placeholder="Núm Control" class= "form-control" autofocus>
 			<input type="text" id="txtNombres"		placeholder="Nombres" class="form-control" required>
 			<input type="text" id="txtApellidoPat"	placeholder="Apellido Paterno" class="form-control" required>
